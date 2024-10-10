@@ -72,8 +72,8 @@ function atualizaTabela(){
 function atualizaMediaFinal(){
 // constante que pega e retorna o valor na função "calculaMediaFinal" 
     const mediaFinal =  calculaMediaFinal();
-//pegando o id do html e juntando com o mediaFinal usando o innerHTML
-    document.getElementById('media-final-valor').innerHTML = mediaFinal;
+//pegando o id do html e juntando com o mediaFinal usando o innerHTML(toFixed é para limitar as casas decimais)
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2); 
 //pegando o id para informar se foi aprovado ou reprovado usando o innerHTML, e o "if" que seria "?" e "else" seria ":"
     document.getElementById('media-final-resultado').innerHTML =  mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
