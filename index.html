@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de médias</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+            <header>
+                <img src="./Imagens/logo.png" alt="capelo e diploma">
+                <h1>Calculadora de médias</h1>
+        </header>
+        <!-- fim do cabeçalho -->
+
+        <!-- formulario -->
+        <form id="form-atividade">
+            <input type="text" placeholder="Nome da atividade" id="nome-atividade" required/> 
+            <input type="number" placeholder="Nota" min="0" max="10" id="nota-atividade"required/>
+            <button type="submit">Adicionar +</button>
+        </form>
+        <!-- fim do formulario -->
+
+        <!-- Criando a tabela, cellspacing é para definir os espaços que vai ter entre as tabelas, nesse caso tirou os espaços -->
+        <table cellspacing="0"> 
+        <!-- thead é o cabeçalho da tabela-->
+                <thead>
+        <!-- tr cria uma linha na tabela -->
+                    <tr>
+        <!-- th cria as colunas que ficarão no topo da tabela (Como se fosse o cabeçalho)-->
+                        <th>
+                            Nome da atividade
+                        </th>
+                        <th>
+                            Nota da atividade
+                        </th>
+                        <th>
+                            Aprovado?
+                        </th>
+                    </tr>  
+            </thead>
+        <!-- tbody e para adicionar o conteudo da tabela (Registros, as linhas etc) -->
+            <tbody>
+        <!-- tr cria uma linha na tabela -->
+        <!-- td cria as colunas abaixo do cabeçalho -->
+            </tbody>
+        <!-- tfoot é o rodapé da tabela -->
+            <tfoot>
+
+        <!-- tr cria uma linha na tabela -->
+                    <tr>
+        <!-- td cria as colunas abaixo do cabeçalho -->
+                        <td>Média final</td>
+                        <td id="media-final-valor">---</td>
+        <!--recebendo conteudo do js -->
+                        <td id="media-final-resultado">---</td>
+                    </tr>
+            </tfoot>
+        </table>
+    </div>
+<!-- Linkando com o javascript -->
+    <script src="./main.js"></script>
+</body>
+</html>

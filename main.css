@@ -1,0 +1,130 @@
+* {
+/* Reset para tirar propiedades padrão do navegador */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background-color: #e7e7e7;
+/* Padding aumenta a area do "Corpo" */
+    padding-top: 100px;
+}
+
+header {
+/* Display flex deixa o a tela flexivel, mais liberdade pra mecher e itens um do lado do outro */
+    display: flex;
+/* align items center o conteudo sera centralizado tanto vertical quanto horizontalmente  */
+    align-items: center;
+/* margin cria um espaço entre os conteudos */
+    margin-bottom: 40px;
+}
+
+header img {
+/* heigt é o tamanho da imagem nesse caso */
+    height: 36px;
+/* margim cira um espaço entre ps conteus */
+    margin-right: 16px;
+}
+
+header h1 {
+/* font size é para definir o tamanho da fonte */
+    font-size: 40px;
+/* font weight é o peso da fonte nesse caso bold, que seria negrito, quanto maior o peso mais destacado fica */
+    font-weight: bold;
+}
+
+/* esse container é para em qualquer tela ficar centralizado */
+.container {
+/* max width é o tamanho maximo do conteudo */
+    max-width: 960px;
+/* width é para o quanto que vai usar de uma tela */
+    width: 100%;
+/* margin 0 auto é para centralizar o conteudo horizoltamente, ajusta margem sup e inf a 0 e as laterais automatica(só funciona se o elemento tiver um width definido.) */
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+/* justify-content: space-between seria para criar um espaço entre os conteudos de forma equalitaria de acorda com o tamanho maximo definido no width */
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+form input {
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+/* nesse caso é para adicionar uma borda em baixo, sendo o tamanho da borda, o "peso" dela e a cor */
+    border-bottom: 2px solid #000;
+    padding: 8px;
+}
+
+form button {
+    background-color:#009432;
+    color:#fff;
+    font-size: 24px;
+    font-weight: bold;
+/* border nesse para definir o tipo da borda, no caso de none é pra tirar a borda */
+    border: none;
+/* cursor é para definir o tipo que o curso vai ficar ao passar o mouse por cima do conteudo */
+    cursor: pointer;
+    padding: 8px;
+}
+
+table {
+    width: 100%;
+}
+
+/* th seria o cabeçalho da tabela (que fica dentro do thead) */
+table th {
+    border-bottom: 2px solid #000;
+    padding:16px;
+}
+
+table td {
+/* nesse caso o espaço seria só na parte inferior e superior o 0 do lado é para sinalizar que não prescisa de espaçamento dos lados */
+    padding:16px 0;
+/* text aling center é para alinhar os textos no centro  */
+    text-align: center;
+    font-size: 18px;
+/* rgba seria os 3 primeiros indicies as combinações para criar a cor, e o ultimo incide para definir a transparencia */
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
+}
+
+/* para mecher das imagens dentro das tabelas */
+table td img {
+    width: 30px;
+}
+
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+/* border radius seria uma borda aredondada */
+    border-radius: 3px;
+}
+
+.aprovado {
+    background-color: #009432;
+}
+
+.reprovado {
+    background-color: red;
+}
